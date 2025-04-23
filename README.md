@@ -10,15 +10,17 @@
 
 ## Задание
 
+Задание размещено в папке task в файле [README.md.](task/README.md)
 
+Файлы сайта расположены в ветке website.
+
+Ссылка на веб-сайт: https://doesnt-game.github.io/KorepovEremina_Practice2025/
 
 ## Вариативная часть задания
 
+Групповое задание "Обзор инструментальных средств анализа защищённости веб-приложений"
 
-
-## Ответственный по проектной (учебной) практике
-
-Кесель Сергей Александрович, кафедра "Информационная безопасность".
+[Источник](https://docs.google.com/spreadsheets/d/e/2PACX-1vR_ZtqySS-Ozp3H3QZ-lBXXGKoroBFBGBPDlAVYCCwt2a9QvgdBblzaPhEJHrJ2PwCZ3YUY48_EOG-C/pubhtml?gid=1547202353&single=true)
 
 ## Проектная деятельность
 
