@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCA - Анализ компонентов ПО</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Логотип" class="logo-img">
+      </div>
+      <div class="header-content">
+        <h1>Обзор инструментов анализа веб-безопасности</h1>
+        <nav>
+          <a href="index.html">Главная</a>
+          <a href="sast.html">SAST</a>
+          <a href="dast.html">DAST</a>
+          <a href="iast.html">IAST</a>
+          <a href="sca.html" class="active">SCA</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="security-method">
+      <h2>Анализ компонентов ПО (SCA)</h2>
+      <h3>Что такое SCA?</h3>
+      <p>
+        SCA (Software Composition Analysis) — анализ сторонних компонентов и библиотек на наличие известных уязвимостей, 
+        лицензионных рисков и устаревших зависимостей. SCA особенно важен в современных приложениях, где до 80% кода 
+        может состоять из сторонних компонентов.
+      </p>
+      
+      <h3>Ключевые функции SCA</h3>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <h4>Инвентаризация зависимостей</h4>
+          <p>Создание полной карты всех используемых библиотек и их версий</p>
+        </div>
+        <div class="tool-card">
+          <h4>Поиск уязвимостей</h4>
+          <p>Сопоставление с базами известных уязвимостей (CVE, NVD)</p>
+        </div>
+        <div class="tool-card">
+          <h4>Анализ лицензий</h4>
+          <p>Выявление проблемных лицензий (GPL, AGPL и др.)</p>
+        </div>
+        <div class="tool-card">
+          <h4>Мониторинг</h4>
+          <p>Постоянный мониторинг новых уязвимостей в зависимостях</p>
+        </div>
+      </div>
+      
+      <h3>Популярные инструменты SCA</h3>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <h4>OWASP Dependency-Track</h4>
+          <p>Открытая платформа для анализа компонентов ПО с поддержкой SBOM.</p>
+          <p><strong>Особенности:</strong> Поддержка CycloneDX, интеграция с CI/CD, API.</p>
+          <p><strong>Форматы:</strong> Maven, npm, NuGet, PyPI, RubyGems и др.</p>
+        </div>
+        <div class="tool-card">
+          <h4>Snyk</h4>
+          <p>Облачное решение с акцентом на разработчиков и DevOps.</p>
+          <p><strong>Особенности:</strong> Автоматические исправления, интеграция с GitHub/GitLab.</p>
+          <p><strong>Базы:</strong> Собственная база уязвимостей + NVD</p>
+        </div>
+        <div class="tool-card">
+          <h4>Black Duck</h4>
+          <p>Комплексное решение для управления рисками открытого ПО.</p>
+          <p><strong>Особенности:</strong> Политики соответствия, детализированные отчеты.</p>
+          <p><strong>Анализ:</strong> Бинарный анализ, анализ исходного кода</p>
+        </div>
+      </div>
+      
+      <h3>Пример отчета SCA</h3>
+      <div class="code-example">
+        <pre>
+Зависимость: log4j-core
+Версия: 2.14.1
+Уязвимости:
+- CVE-2021-44228 (Критическая): Удаленное выполнение кода через JNDI
+- CVE-2021-45046 (Высокая): Не
